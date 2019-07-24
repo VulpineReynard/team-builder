@@ -10,7 +10,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,4 +30,23 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.members-form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 400px;
+  margin: 30px auto;
+  border-radius: 5px;
+  background: #282c34;
+}
+label {
+  margin: auto;
+  color: white;
+}
+input {
+  border-radius: 3px;
+  outline: none;
+  padding: 5px;
 }

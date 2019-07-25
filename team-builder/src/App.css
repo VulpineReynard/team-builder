@@ -1,0 +1,65 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.members-form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 400px;
+  margin: 30px auto;
+  border-radius: 5px;
+  background: #282c34;
+}
+label {
+  margin: auto;
+  color: white;
+}
+input {
+  border-radius: 3px;
+  outline: none;
+  padding: 5px;
+}
+.member-container {
+  width: 1000px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.member-card {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  margin: auto 10px;
+}

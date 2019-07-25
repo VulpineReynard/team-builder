@@ -6,6 +6,12 @@ import './App.css';
 
 function App() {
   const [teamList, setTeamList] = useState([]);
+  const [memberToEdit, setMemberToEdit] = useState({});
+
+  const editMember = (member) => {
+    setMemberToEdit(member);
+    console.log(memberToEdit);
+  }
 
   return (
     <div className="App">
@@ -13,7 +19,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
       <Form setTeamList={setTeamList} teamList={teamList} />
-      <TeamMemberContainer teamList={teamList} />
+      <TeamMemberContainer editMember={editMember} memberToEdit={memberToEdit} setMemberToEdit={setMemberToEdit} teamList={teamList} />
     </div>
   );
 }

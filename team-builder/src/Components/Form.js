@@ -5,8 +5,7 @@ export default function Form({setTeamList, teamList}) {
 
   const handleSubmit = event => {
     event.preventDefault();
-    teamList.push(teamMember);
-    setTeamList(teamList);
+    setTeamList([...teamList, teamMember]);
     setTeamMember({ name: "", email: "", role: "" });
     console.log("TeamList: ", teamList);
   }

@@ -50,3 +50,16 @@ input {
   outline: none;
   padding: 5px;
 }
+.member-container {
+  width: 1000px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.member-card {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  margin: auto 10px;
+}
